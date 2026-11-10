@@ -1,0 +1,86 @@
+.popular-container,
+.search-route-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+.popular-content,
+.search-body {
+  padding: 40px;
+}
+
+.popular-movies-list,
+.search-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.popular-movie-poster,
+.search-movie-poster {
+  width: 180px;
+  border-radius: 8px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 6px;
+}
+
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.no-movies-image {
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.no-movies-text {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.popular-movie-image {
+  transition: transform 0.3s ease;
+}
+
+.popular-movie-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .popular-content,
+  .search-body {
+    padding: 20px;
+  }
+
+  .popular-movies-list,
+  .search-movies-list {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .popular-movie-poster,
+  .search-movie-poster {
+    width: 140px;
+  }
+}
